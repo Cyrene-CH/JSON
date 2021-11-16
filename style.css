@@ -1,0 +1,118 @@
+body {
+  padding: 0px;
+  margin: 0;
+  background-color: #eee;
+  font-size: 2rem;
+}
+body * {
+  box-sizing: border-box;
+}
+#contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.5rem;
+}
+
+.contentItem {
+  /* padding: 1vmin; */
+  height: 100vh;
+}
+
+.mainpic {
+  position: relative;
+  top: 18vmax;
+  left: 9vmax;
+  /* width: 45%;
+  height: 30%; */
+  object-fit: cover;
+}
+
+.mainpic:hover {
+  /* background-color: bisque; */
+  -webkit-animation: glide 0.7s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide {
+  from {
+    top: 18vmax;
+    left: 9vmax;
+  }
+
+  to {
+    top: 17vmax;
+    left: 9vmax;
+  }
+}
+
+.ovalshadow {
+  /* background-color: blue; */
+  /* padding: 20vh; */
+  opacity: 0.5;
+  width: 22vh;
+  height: 5vh;
+  border-radius: 50%;
+  position: relative;
+  top: 21vmax;
+  left: 10vmax;
+  filter: blur(20px);
+}
+
+#container {
+  color: #545454;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  width: 100%;
+  top: 3vmax;
+  left: 3vmax;
+  display: block;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+}
+
+#flip {
+  height: 60px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#flip > div > div {
+  margin: 0;
+  color: #545454;
+  padding: 0px 0px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
