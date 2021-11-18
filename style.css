@@ -58,6 +58,7 @@ body * {
 }
 
 #container {
+  /* height: 130px; */
   color: #545454;
   font-size: 25px;
   font-weight: bolder;

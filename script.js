@@ -1,4 +1,13 @@
 let contentGridElement = document.getElementById("contentGrid");
+const sr = ScrollReveal();
+
+sr.reveal("#container", {
+  origin: "top",
+  duration: 3000,
+  distance: "50px",
+});
+
+sr.reveal(".contentItem", {}, 500);
 
 let json = [
   {
